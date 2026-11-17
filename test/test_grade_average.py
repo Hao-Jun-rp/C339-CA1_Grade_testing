@@ -8,7 +8,7 @@ from src.grade_pass import has_passed
         (0, 0, 0.0),          # Lower boundary
         (100, 100, 100.0),    # Upper boundary
         (50, 70, 60.0),       # Typical whole-number average
-        (50, 51, 50.5),       # Fractional average (exposes // 2 floor division bug)
+        (50, 51, 50.5),       # Fractional average (exposes float err)
     ],
 )
 def test_calculate_average_valid_inputs(mark_one, mark_two, expected):
