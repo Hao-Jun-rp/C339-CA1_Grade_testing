@@ -1,6 +1,6 @@
 import pytest
-from grade_average import calculate_average
-from grade_pass import has_passed
+from src.grade_average import calculate_average
+from src.grade_pass import has_passed
 
 @pytest.mark.parametrize(
     "mark_one, mark_two, expected",
