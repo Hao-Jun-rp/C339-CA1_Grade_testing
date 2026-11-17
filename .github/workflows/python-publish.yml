@@ -4,12 +4,14 @@ on:
   push:
     branches: [main]
     paths:
-      - '**.py'
+      - 'src/**.py'
+      - 'test/**.py'
       - '.github/workflows/**'
   pull_request:
     branches: [main]
     paths:
-      - '**.py'
+      - 'src/**.py'
+      - 'test/**.py'
       - '.github/workflows/**'
 
 concurrency:
@@ -32,4 +34,4 @@ jobs:
         run: pip install pytest
 
       - name: Run pytest
-        run: pytest -m pytest
+        run: python -m pytest -v
