@@ -1,0 +1,9 @@
+# Word documents & temporary Word lock files
+*.docx
+~$*
+
+# Python cache & pytest artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
