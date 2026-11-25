@@ -33,7 +33,7 @@ def test_calculate_average_out_of_range(mark_one, mark_two):
 @pytest.mark.parametrize(
     "mark_one, mark_two",
     [
-        (True, 50),      # bool is not a valid int
+        (True, 50),      # bool is not a valid int rkw
         (50, False),     # bool is not a valid int
         (50.5, 50),      # float invalid
         ("50", 50),      # string invalid
